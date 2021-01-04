@@ -10,7 +10,11 @@ class Articles(models.Model):
     abstract = models.TextField(verbose_name="文章摘要")
     content = models.TextField(verbose_name="文章内容")
     visited = models.IntegerField(default=0,verbose_name="文章访问量")
+<<<<<<< HEAD
     visited = models.IntegerField(default=0,verbose_name="文章访问量")
+=======
+    created_at = models.DateTimeField(auto_now_add=True,verbose_name="创建时间")
+>>>>>>> f4d958d ('模板复用')
     modified_at = models.DateTimeField(auto_now=True,verbose_name="修改时间")
 
     class Meta:

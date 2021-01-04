@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """myBlog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,4 +19,12 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+=======
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('article/',include("articles.urls"))
+>>>>>>> f4d958d ('模板复用')
 ]
