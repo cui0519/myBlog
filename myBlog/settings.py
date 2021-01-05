@@ -67,11 +67,7 @@ ROOT_URLCONF = 'myBlog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
-        'DIRS': [],
-=======
         'DIRS': [os.path.join(BASE_DIR,'templates')],
->>>>>>> f4d958d ('模板复用')
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -135,9 +131,6 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-<<<<<<< HEAD
-=======
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static'),
 )
->>>>>>> f4d958d ('模板复用')

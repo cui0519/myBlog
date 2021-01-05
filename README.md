@@ -77,3 +77,18 @@
 6. 联系我页面，发送邮件
 >>>>>>> f4d958d ('模板复用')
 
+
+
+
+
+
+
+## 六、实现模板复用
+
+如何加载静态页面 网上图片不需要解析 加标签
+在settings.py文件中注册静态页面和templates模板 创建公共模板进行继承extends 实现模板复用
+将公共内容base.html/aside.html写入common文件夹中实现模板复用减少冗余代码的写入 注册静态内容 {% load static %} css/js
+
+## 七、注册路由实现页面跳转
+
+在主博客页面的urls.py文件中include引入每个app的urls配置 MVC模式 models.py 数据库字段内容 进行数据展示和增删改查 views.py
